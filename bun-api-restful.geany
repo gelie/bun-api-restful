@@ -21,19 +21,18 @@ indent_mode=2
 name=bun-api-restful
 base_path=/home/gelie/Projects/bun-api-restful/
 description=
+file_patterns=
 
 [long line marker]
 long_line_behaviour=1
 long_line_column=80
 
 [files]
-current_page=1
+current_page=0
 FILE_NAME_0=1773;Python;0;EUTF-8;0;1;0;%2Fhome%2Fgelie%2FProjects%2Fbun-api-restful%2Fapp%2Fapi%2Froutes.py;0;4
-FILE_NAME_1=345;Python;0;EUTF-8;0;1;0;%2Fhome%2Fgelie%2FProjects%2Fbun-api-restful%2Fapp%2Fapi%2Fschema.py;0;4
+FILE_NAME_1=547;Python;0;EUTF-8;0;1;0;%2Fhome%2Fgelie%2FProjects%2Fbun-api-restful%2Fapp%2Fapi%2Fschema.py;0;4
 FILE_NAME_2=1312;Python;0;EUTF-8;0;1;0;%2Fhome%2Fgelie%2FProjects%2Fbun-api-restful%2Fapp%2Fmodels.py;0;4
-FILE_NAME_3=0;Python;0;EUTF-8;0;1;0;%2Fhome%2Fgelie%2FProjects%2Fbun-api3%2Fapp%2Fapi%2Fusers.py;0;4
-FILE_NAME_4=0;Python;0;EUTF-8;0;1;0;%2Fhome%2Fgelie%2FProjects%2Fbun-api-restful%2Fapp%2Fapi%2Ftokens.py;0;4
-FILE_NAME_5=0;Python;0;EUTF-8;0;1;0;%2Fhome%2Fgelie%2FProjects%2Fbun-api-restful%2Fapp%2F__init__.py;0;4
+FILE_NAME_3=0;Python;0;EUTF-8;0;1;0;%2Fhome%2Fgelie%2FProjects%2Fbun-api-restful%2Fapp%2F__init__.py;0;4
 
 [VTE]
 last_dir=/home/gelie/Projects/bun-api3

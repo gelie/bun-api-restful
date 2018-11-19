@@ -44,8 +44,10 @@ class GroupList(Resource):
 
 class Membership(Resource):
     def get(self, user_id):
+        mygroups = User.user_memberships
         memberships = UserGroupMembership.query.filter(UserGroupMembership.user_id==user_id).all()
         return membership_schema.dump(memberships).data
+
         
 api.add_resource(UserPage, '/users/<int:user_id>', endpoint='user')
 api.add_resource(UserList, '/users', endpoint='users')
