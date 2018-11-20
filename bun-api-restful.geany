@@ -29,10 +29,6 @@ long_line_column=80
 
 [files]
 current_page=0
-FILE_NAME_0=1773;Python;0;EUTF-8;0;1;0;%2Fhome%2Fgelie%2FProjects%2Fbun-api-restful%2Fapp%2Fapi%2Froutes.py;0;4
-FILE_NAME_1=547;Python;0;EUTF-8;0;1;0;%2Fhome%2Fgelie%2FProjects%2Fbun-api-restful%2Fapp%2Fapi%2Fschema.py;0;4
-FILE_NAME_2=1312;Python;0;EUTF-8;0;1;0;%2Fhome%2Fgelie%2FProjects%2Fbun-api-restful%2Fapp%2Fmodels.py;0;4
-FILE_NAME_3=0;Python;0;EUTF-8;0;1;0;%2Fhome%2Fgelie%2FProjects%2Fbun-api-restful%2Fapp%2F__init__.py;0;4
 
 [VTE]
 last_dir=/home/gelie/Projects/bun-api3

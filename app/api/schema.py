@@ -1,41 +1,26 @@
+from flask_restplus import Model, fields
 from app.models import User, Group, UserGroupMembership
-from app import ma
-from marshmallow import fields
-# from .routes import UserPage
 
+user_fields = Model('User', {
+    'login': fields.String,
+    'first_name': fields.String,
+    'last_name': fields.String,
+    'links': {
+        'self': fields.Url('api.user', absolute=True),
+        'collection': fields.Url('api.users', absolute=True),
+        # 'groups': fields.List(fields.Nested('api.groups'))
+    }
 
-    
-class GroupSchema(ma.ModelSchema):
-    class Meta:
-        model = Group
-        fields = ('group_id', 'short_name', 'full_name', 'links')
-        
-    links = ma.Hyperlinks({
-        'self': ma.URLFor('api.group', group_id='<group_id>', _external=1),
-        'collection': ma.URLFor('api.groups', _external=1)
-    })
+})
 
-class UserMembership(ma.ModelSchema):
-    class Meta:
-        model = UserGroupMembership
-        fields = ('group', 'links')
-        
-    links = ma.Hyperlinks({
-        'self': ma.URLFor('api.group', group_id='<group_id>', _external=1),
-        # 'collection': ma.URLFor('api.groups', _external=1)
-    })
+group_fields = Model('Group', {
+    # 'login': fields.String,
+    'full_name': fields.String,
+    'short_name': fields.String,
+    'links': {
+        'self': fields.Url('api.group', absolute=True),
+        'collection': fields.Url('api.groups', absolute=True)
+        # 'groups': fields.List(fields.Nested('api.groups'))
+    }
 
-
-class UserSchema(ma.ModelSchema):
-    class Meta:
-        model = User
-        # fields = ('user_id', 'first_name', 'last_name', 'email', 'user_memberships', 'mygroups', 'links')
-    mygroups = fields.Method('get_group_count')
-    links = ma.Hyperlinks({
-        'self': ma.URLFor('api.user', user_id='<user_id>', _external=1),
-        'collection': ma.URLFor('api.users', _external=1),
-        'groups': ma.URLFor('api.mygroups', user_id='<user_id>', _external=True)
-    })
-    def get_group_count(self, obj):
-        return len(obj.user_memberships)
-    
+})
