@@ -13,6 +13,10 @@ user_fields = Model('User', {
 
 })
 
+user_collection = Model('UserList', {
+    'users': fields.List(fields.Nested(user_fields))
+})
+
 group_fields = Model('Group', {
     # 'login': fields.String,
     'full_name': fields.String,

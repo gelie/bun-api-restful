@@ -29,9 +29,11 @@ long_line_column=80
 
 [files]
 current_page=0
+FILE_NAME_0=1238;Python;0;EUTF-8;0;1;0;%2Fhome%2Fgelie%2FProjects%2Fbun-api-restful%2Fapp%2Fapi%2Froutes.py;0;4
+FILE_NAME_1=234;Python;0;EUTF-8;0;1;0;%2Fhome%2Fgelie%2FProjects%2Fbun-api-restful%2Fapp%2Fapi%2Fschema.py;0;4
 
 [VTE]
-last_dir=/home/gelie/Projects/bun-api3
+last_dir=/home/gelie/Projects/bun-api-restful/app/api
 
 [prjorg]
 source_patterns=*.c;*.C;*.cpp;*.cxx;*.c++;*.cc;*.m;
